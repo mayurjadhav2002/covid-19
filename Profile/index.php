@@ -28,15 +28,15 @@ $mail = new PHPMailer(true);
         //Server settings
                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'mail.themedaid.in';                     //Set the SMTP server to send through
+    $mail->Host       = 'mail.google.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'home@themedaid.in';                     //SMTP username
-    $mail->Password   = 'hello';                               //SMTP password
+    $mail->Username   = 'abc@xyz.com';                     //SMTP username
+    $mail->Password   = 'yourpassword';                               //SMTP password
       //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Port       = portnumber;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-        $mail->setFrom('home@themedaid.in', 'Covidbreak');
+        $mail->setFrom('youmail', 'name');
         $mail->addAddress("$email");     //Add a recipient
 
 
