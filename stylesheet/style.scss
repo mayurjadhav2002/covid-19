@@ -1,0 +1,19 @@
+// site.scss
+// 1. Your custom variables and variable overwrites.
+@import "node_modules/uikit/src/scss//accordion.scss";
+@import "node_modules/uikit/src/scss//alert.scss";
+@import "node_modules/uikit/src/scss//align.scss";
+// ... import all
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables.scss";
+@import "uikit/src/scss/mixins.scss";
+// 3. Your custom mixin overwrites.
+@import "node_modules/uikit/src/scss//accordion-mixins.scss";
+@import "node_modules/uikit/src/scss//alert-mixins.scss";
+@import "node_modules/uikit/src/scss//align-mixins.scss";
+// ... import all
+// 4. Import UIkit
+@import "uikit/src/scss/uikit.scss";
+$menu-item-color{
+    color: blue;
+}
